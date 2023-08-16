@@ -1,0 +1,66 @@
+//Functions
+//function called sayMyName has 0 arguments
+/*function sayMyName(){
+    console.log('Shreya')
+    console.log('Komal')
+    //function vitra jati pani code xa call garda sapai run hunxa
+}
+sayMyName(); yesto garda chai console ma gara function lai call garna parxa to see the output*/ 
+
+//Or It can also be done as
+//this function has 1 argument
+//function sayMyName(name){
+  //  console.log(name)}
+//sayMyName('Shreya');
+
+/*function greeting(name){
+    //greet= 'Hi ' + name + ' Its me .How you doin?' 
+    //template literals 
+    greet=`Hi ${name} Its me .How you doin?`
+    console.log(greet)
+}
+greeting('Shreya');*/
+
+function sum(a ,b){
+    return a+b
+} 
+//yetikai garda ni vayo sum ko or u can also do this
+//num = sum(1,3)
+//console.log(num)
+
+function calculateFood(food, tip){
+const tipPercentage= tip/100;
+const tipAmount= food * tipPercentage;
+
+const total = sum(food, tipAmount ) ;
+return total;
+}
+console.log(calculateFood(100, 20));
+
+//arrow functions
+
+//arrow functions with explicit return
+const sumArrow = (a,b) => {
+    return a+b
+}
+console.log(sumArrow(10,15))
+
+
+//arrow functions with implicit return
+const sumArrow2 = (a,b) => a+b
+console.log(sumArrow2(10,20))
+
+
+//practise
+const sub=(a,b) => (a-b);
+console.log(sub(10,15));
+
+const mul=(a,b) => (a*b);
+console.log(mul(2,3));
+
+const div=(a,b) => (a/b);
+console.log(div(12,3));
+
+const rem=(a,b) => (a % b);
+console.log(rem(15,2));
+
